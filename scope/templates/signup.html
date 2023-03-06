@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top IT Courses and Certifications in Kerala | Trivandrum | Kochi</title>
+  
+    <link href="{% static 'img/favicon.ico' %}" rel="icon">
+
+    <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+    <link href='{% static "https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" %}' rel="stylesheet">   
+    
+    <link href='{% static "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" %}' rel="stylesheet">
+    <link href='{% static "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" %}' rel="stylesheet">
+
+    <link href='{% static "lib/animate/animate.min.css" %}' rel="stylesheet">
+    <link href='{% static "lib/owlcarousel/assets/owl.carousel.min.css" %}' rel="stylesheet">
+
+    <link href='{% static "css/bootstrap.min.css" %}' rel="stylesheet">
+
+    <!-- <link href='{% static "css/style.css" %}' rel="stylesheet"> -->
+    <link href='{% static "css/style.css" %}' rel="stylesheet">
+    <link href='{% static "css/style1.css" %}' rel="stylesheet">
+   <body>
+   <nav class="navbar navbar-expand-lg bg-dark navbar-light sticky-top py-0 pe-5" style="color:darkblue;">
+</style>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav ms-auto p-4 p-lg-0">
+       <div class="topnav-centered">
+                    <img src='{% static "img/logo.png" %}'></a>
+                    </div>
+        <a href=# class="nav-item nav-link active"><span>Home</span></a>
+        <a href=# class="nav-item nav-link active"><span>About</span></a>
+        <a href=# class="nav-item nav-link active"><span>Contact</span></a>
+        <a href=# class="nav-item nav-link active"><span>Login</span></a>
+     </div>
+   </div>
+</nav>
+<div class="background">
+          <div class="shape"></div>
+          <div class="shape"></div>
+      </div>
+      <form action="" method="post">
+          {% csrf_token %} 
+          <h2>Welcome to </h2>
+          <h1 style=color:yellow>Scope India</h1>
+          <h3>Signup Here</h3>
+  
+          <label for="username">Username</label>
+          <input type="text" placeholder="Username" name="username" id="username">
+  
+          <label for="email">Email</label>
+          <input type="email" placeholder="Email or Phone" name="email" id="email">
+  
+          <label for="password1">Password</label>
+          <input type="password" placeholder="Password" id="password1" name="password1">
+  
+  
+          <label for="password2">Confirm Password</label>
+          <input type="password" placeholder="Confirm Password" id="password2" name="password2">
+          <button type="submit">Signup</button>
+          <p>Already have an account? <a href="{% url 'login' %}" >Sign in</a></p>
+      </form>
+  </body>
+  </html>
